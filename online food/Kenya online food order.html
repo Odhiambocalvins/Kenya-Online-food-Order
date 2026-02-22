@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kenya Food Order</title>
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo-container">
+        <img src="https://imgs.search.brave.com/S5A6Jg3mmBA2yGIF4jEOZQ6ZiTXc_xWuOzDmUHteIKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mYWJy/aWticmFuZHMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9GYW1v/dXMtRmFzdC1Gb29k/LUxvZ29zLTMyLTEy/MDB4NzUwLnBuZw" alt="Logo" class="logo">
+        <h1>Kenya Online Food Order</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Order</a>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn">⋮</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#order-form">Order</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    
+<!-- Home Section -->
+<section id="home">
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+
+    <div class="food-item">
+        <img src="https://imgs.search.brave.com/vke161P1YdEcgAHY72ELxXU9kgvnF3jfjMEtt9a8_RI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wbGF0/ZS1mZWF0dXJlcy11/Z2FsaS1tb3VuZC1j/b29rZWQtY2hvcHBl/ZC1zdWt1bWEtd2lr/aS1jb2xsYXJkLWdy/ZWVucy1zbWFsbC1i/b3dsLXJlZC10b21h/dG8tc3Rldy1yZXBy/ZXNlbnRpbmctMzcz/MDc3NjM5LmpwZw" alt="Ugali and Sukuma">
+        <h3>Ugali & Sukuma Wiki</h3>
+        <p>Price: Ksh 150</p>
+        <button onclick="selectFood('Ugali & Sukuma Wiki',150)">Order Now</button>
+    </div>
+
+    <div class="food-item">
+        <img src="https://imgs.search.brave.com/uceHpdJ4veq8PeJDEFwuyqB8_yUDh4gqFRsjuqv-hbs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mb3Jt/YXRpb25zb2Zhbm9i/bGV3b21hbi5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDQvcG5nXzIwMjMw/NDIwXzEzMTU0Nl8w/MDAwMS0zMDB4MzAw/LnBuZw" alt="Pilau">
+        <h3>Pilau</h3>
+        <p>Price: Ksh 250</p>
+        <button onclick="selectFood('Pilau',250)">Order Now</button>
+    </div>
+
+    <div class="food-item">
+        <img src="https://imgs.search.brave.com/uWb0DlcgoQJ-67s1fFWz-0hlANzgnzAikUPQ3Li0EOY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9Q/c0RDUjdDLXVGVS9t/YXhyZXNkZWZhdWx0/LmpwZw" alt="Nyama Choma">
+        <h3>Nyama Choma</h3>
+        <p>Price: Ksh 500</p>
+        <button onclick="selectFood('Nyama Choma',500)">Order Now</button>
+    </div>
+</section>
+
+<!-- Order Form Section -->
+<section id="order-form" class="order-form">
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+        <label>Full Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="text" id="phone" required><br><br>
+
+        <label>Food Item:</label><br>
+        <select id="foodSelect">
+            <option value="Ugali & Sukuma Wiki" data-price="150">Ugali & Sukuma Wiki</option>
+            <option value="Pilau" data-price="250">Pilau</option>
+            <option value="Nyama Choma" data-price="500">Nyama Choma</option>
+        </select><br><br>
+
+        <label>Delivery Location:</label><br>
+        <input type="text" id="location" required><br><br>
+
+        <h3 id="totalPrice">Total: Ksh 150</h3>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+
+
+<section id="about-us" class="about-us">
+    <h2>About Us</h2>
+    <p>WE OFFER FAST ONLINE DELIVERY AT THE COMFORT OF YOUR HOME. TRUSTED AND PROVED.</p>
+</section>
+<section id="reviews" class="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <div class="profile-circle">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="review-content">
+                <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+                <p>"Amazing service! My food arrived hot and fresh. Highly recommend!"</p>
+                <span>- Brian M.</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="profile-circle">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="review-content">
+                <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+                <p>"Fast delivery and very professional. Ordering was super easy."</p>
+                <span>- Faith A.</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="profile-circle">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="review-content">
+                <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+                <p>"Best online food delivery in Kenya! I will definitely order again."</p>
+                <span>- Kevin O.</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
+
+    <p>
+    © 2026 Kenya Online Food Order | 
+    Contact: <a href="tel:+254708458665">+254708458665</a>
+</p>
+</script>
+
+</body>
+</html>
