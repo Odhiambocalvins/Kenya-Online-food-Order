@@ -1,0 +1,476 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Stylish H2 headers */
+header{
+    text-align: center; /* Center text */
+    font-size: 36px;    /* Make it bigger */
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF5733, #FFC300, #28B463, #3498DB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+}
+
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.food-item {
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+.order-form {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+input, select {
+    width: 250px;
+    padding: 8px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.navbar {
+    background-color: green;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+/* Navbar */
+.navbar {
+    background-color: green;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo + Title */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Normal links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button (three dots) */
+.dropbtn {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Navbar sticky */
+.navbar {
+    background-color: green;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo + Title */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Normal links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button (three dots) */
+.dropbtn {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Responsive - Small screens */
+@media screen and (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hidden by default on mobile */
+        width: 100%;
+        background-color: green;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Social links container */
+footer .social-links {
+    margin-bottom: 10px;
+}
+
+/* Facebook icon styling */
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+footer .social-links a:hover {
+    color: #3b5998; /* Facebook blue */
+    transform: scale(1.2); /* Slight zoom */
+}
+/* About Us Section */
+.about-us {
+    background-color: #fff0f5; /* Light pastel background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Colorful Gradient Header */
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF5733, #FFC300, #28B463, #3498DB, #8E44AD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+.about-us p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF5733; /* Bold, warm color for emphasis */
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* Profile Circle */
+.profile-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff5733, #ffc300, #28b463);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 30px;
+    color: white;
+}
+
+/* Slight animation */
+.profile-circl/* Reviews Section */
+.reviews {
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+}
+
+/* Reviews Header */
+.reviews h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #ff5733, #ffc300, #28b463);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Review Container */
+.review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Review Card (Horizontal Layout) */
+.review-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Circle */
+.profile-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff5733, #ffc300, #28b463);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    flex-shrink: 0;
+}
+
+/* Review Content */
+.review-content h3 {
+    margin: 0 0 8px;
+    color: #ffc300;
+}
+
+.review-content p {
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.review-content span {
+    font-weight: bold;
+    color: #28b463;
+}e:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media (max-width: 600px) {
+    .review-card {
+        flex-direction: column;
+      footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}  text-align: center;
+    }
+    /* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Center and space items */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;   /* space between copyright and contact */
+    flex-wrap: wrap; /* responsive on small screens */
+}
+
+/* Contact link styling */
+.footer-content a {
+    color: #ffc300;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+
